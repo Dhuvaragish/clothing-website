@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&amp;display=swap');
+      .monogram {
+        font-family: 'Cormorant Garamond', 'Bodoni MT', 'Didot', 'Georgia', serif;
+        font-size: 72px;
+        font-weight: 600;
+        fill: #493A2E;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+    </style>
+  </defs>
+  <!-- Champagne Beige Background -->
+  <rect width="100" height="100" fill="#D5C5AD" rx="0" />
+  <!-- Deep Espresso Brown Centered V Monogram -->
+  <text x="50" y="53" class="monogram">V</text>
+</svg>

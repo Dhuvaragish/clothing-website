@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64" role="img" aria-label="VÉRÉ Paris Luxury Logo">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Montserrat:wght@400&amp;display=swap');
+      .brand-wordmark {
+        font-family: 'Cormorant Garamond', 'Bodoni MT', 'Didot', 'Georgia', serif;
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: 0.32em;
+        fill: #493A2E;
+        text-anchor: middle;
+      }
+      .brand-sub {
+        font-family: 'Montserrat', -apple-system, sans-serif;
+        font-size: 7.5px;
+        font-weight: 400;
+        letter-spacing: 0.58em;
+        fill: #968675;
+        text-anchor: middle;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text x="168" y="38" class="brand-wordmark">VÉRÉ</text>
+  <text x="168" y="54" class="brand-sub">PARIS</text>
+</svg>

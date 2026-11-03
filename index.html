@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VÉRÉ — The Art of Timeless Dressing. European old-money luxury fashion, Parisian elegance, and architectural quiet luxury tailored with noble fibers.">
+  <meta name="keywords" content="VÉRÉ, luxury fashion, quiet luxury, old money fashion, Parisian atelier, cashmere coats, bespoke tailoring, timeless dressing">
+  <meta name="author" content="VÉRÉ Maison de Mode">
+
+  <title>VÉRÉ | The Art of Timeless Dressing</title>
+
+  <!-- Favicon Assets -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Google Fonts: Cormorant Garamond (Serif) & Montserrat (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Luxury Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pure CSS Interactive Drawer Toggles (No JavaScript) -->
+  <input type="checkbox" id="nav-toggle" class="drawer-toggle" aria-hidden="true">
+  <input type="checkbox" id="search-toggle" class="drawer-toggle" aria-hidden="true">
+  <input type="checkbox" id="bag-toggle" class="drawer-toggle" aria-hidden="true">
+
+  <!-- Backdrops for Pure-CSS Modals -->
+  <label for="nav-toggle" class="nav-backdrop" aria-label="Close navigation menu"></label>
+  <label for="search-toggle" class="search-backdrop" aria-label="Close search overlay"></label>
+  <label for="bag-toggle" class="bag-backdrop" aria-label="Close shopping bag drawer"></label>
+
+  <!-- -----------------------------------------------------------------------
+       Pure CSS Navigation Drawer (Left Slideout)
+       ----------------------------------------------------------------------- -->
+  <aside class="nav-drawer" aria-label="Main Navigation Menu">
+    <div class="drawer-header">
+      <span class="editorial-tagline text-taupe">MAISON VÉRÉ</span>
+      <label for="nav-toggle" class="drawer-close" role="button" aria-label="Close menu">
+        <span>CLOSE</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </label>
+    </div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item">
+          <a href="#collections" class="drawer-nav-link">
+            <span class="drawer-nav-index">01</span>
+            <span>Featured Collections</span>
+          </a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="#products" class="drawer-nav-link">
+            <span class="drawer-nav-index">02</span>
+            <span>The Permanent Atelier</span>
+          </a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="#editorial" class="drawer-nav-link">
+            <span class="drawer-nav-index">03</span>
+            <span>The Autumn Manifesto</span>
+          </a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="#about" class="drawer-nav-link">
+            <span class="drawer-nav-index">04</span>
+            <span>Atelier & European Heritage</span>
+          </a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="#concierge" class="drawer-nav-link">
+            <span class="drawer-nav-index">05</span>
+            <span>Private Client Salon</span>
+          </a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="#contact" class="drawer-nav-link">
+            <span class="drawer-nav-index">06</span>
+            <span>Bespoke Appointments</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-title">Flagship Atelier</div>
+      <div class="drawer-footer-address">
+        24 Place Vendôme, 75001 Paris<br>
+        Monday — Saturday · By Private Appointment
+      </div>
+      <div class="editorial-tagline text-taupe">PARIS · LONDON · MILAN · NEW YORK</div>
+    </div>
+  </aside>
+
+  <!-- -----------------------------------------------------------------------
+       Pure CSS Search Modal (Top Overlay)
+       ----------------------------------------------------------------------- -->
+  <div class="search-modal" role="dialog" aria-modal="true" aria-label="Search the Collections">
+    <div class="search-modal-inner">
+      <div class="search-modal-header">
+        <span class="editorial-subhead">SEARCH THE MAISON ARCHIVE</span>
+        <label for="search-toggle" class="drawer-close" role="button" aria-label="Close search">
+          <span>CLOSE</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </label>
+      </div>
+
+      <form action="#products" method="GET" class="search-form">
+        <div class="search-input-wrap">
+          <label for="site-search-input" class="visually-hidden" style="position:absolute; width:1px; height:1px; overflow:hidden;">Search query</label>
+          <input type="search" id="site-search-input" name="q" class="search-input-field" placeholder="Search by silhouette, noble fiber, or atelier piece..." autocomplete="off">
+        </div>
+      </form>
+
+      <div class="search-curated-links">
+        <span>CURATED INQUIRIES:</span>
+        <a href="#products" class="search-chip">Double-Face Cashmere</a>
+        <a href="#products" class="search-chip">Mulberry Silk Slip</a>
+        <a href="#products" class="search-chip">Biella Wool Blazer</a>
+        <a href="#products" class="search-chip">Architectural Trench</a>
+        <a href="#products" class="search-chip">Tuscan Leather</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------------------------------------------------------------
+       Pure CSS Shopping Bag Drawer (Right Slideout)
+       ----------------------------------------------------------------------- -->
+  <aside class="bag-drawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <span class="editorial-tagline text-espresso">YOUR ATELIER SELECTION (2)</span>
+      <label for="bag-toggle" class="drawer-close" role="button" aria-label="Close shopping bag">
+        <span>CLOSE</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </label>
+    </div>
+
+    <div class="bag-drawer-items">
+      <!-- Item 1 -->
+      <article class="bag-item-card">
+        <img src="images/product-1.jpg" alt="The Draped Double-Face Wool Coat" class="bag-item-thumb">
+        <div class="bag-item-info">
+          <div>
+            <h4 class="bag-item-title">The Draped Double-Face Wool Coat</h4>
+            <div class="bag-item-attr">Size: FR 38 · Sand Melange</div>
+            <div class="bag-item-attr">90% Virgin Wool, 10% Cashmere</div>
+          </div>
+          <div class="bag-item-price">€2,450</div>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="bag-item-card">
+        <img src="images/product-2.jpg" alt="The Mulberry Silk Halter Slip Gown" class="bag-item-thumb">
+        <div class="bag-item-info">
+          <div>
+            <h4 class="bag-item-title">The Mulberry Silk Halter Slip Gown</h4>
+            <div class="bag-item-attr">Size: FR 36 · Champagne Ivory</div>
+            <div class="bag-item-attr">100% 22-Momme Silk Crepe</div>
+          </div>
+          <div class="bag-item-price">€1,680</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="bag-drawer-footer">
+      <div class="bag-subtotal-row">
+        <span class="bag-subtotal-label">Subtotal (Complimentary Insured Delivery)</span>
+        <span class="bag-subtotal-amount">€4,130</span>
+      </div>
+      <a href="#contact" class="hero-cta-btn" style="width: 100%; justify-content: center;">
+        <span>PROCEED TO PRIVATE CHECKOUT</span>
+        <span class="cta-arrow">→</span>
+      </a>
+      <div class="form-privacy-note" style="margin-top: 0.75rem;">
+        White-glove European courier delivery with signature receipt.
+      </div>
+    </div>
+  </aside>
+
+  <!-- -----------------------------------------------------------------------
+       6. Website Navigation Bar
+       ----------------------------------------------------------------------- -->
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Main Navigation">
+      <!-- Left: Minimal Menu Icon -->
+      <div class="nav-left">
+        <label for="nav-toggle" class="nav-menu-btn" role="button" aria-label="Open navigation menu">
+          <div class="menu-icon-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+          <span class="nav-menu-label">MENU</span>
+        </label>
+      </div>
+
+      <!-- Center: VÉRÉ Luxury Wordmark -->
+      <div class="nav-center">
+        <a href="#" class="brand-logo-link" aria-label="VÉRÉ Home">
+          <span class="brand-logo-text">VÉRÉ</span>
+          <span class="brand-logo-sub">PARIS</span>
+        </a>
+      </div>
+
+      <!-- Right: Search & Shopping Bag Icons -->
+      <div class="nav-right">
+        <label for="search-toggle" class="nav-action-btn" role="button" aria-label="Search collection">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+          </svg>
+        </label>
+
+        <label for="bag-toggle" class="nav-action-btn" role="button" aria-label="Shopping bag with 2 items">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="nav-bag-count" aria-hidden="true">2</span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <!-- -----------------------------------------------------------------------
+       7. Hero Section (Editorial Luxury Layout)
+       ----------------------------------------------------------------------- -->
+  <main id="main-content">
+    <section class="hero-section" aria-label="Hero Section">
+      <!-- Fashion Model Editorial Background -->
+      <div class="hero-bg-layer" aria-hidden="true">
+        <img src="images/hero-editorial.jpg" alt="VÉRÉ Autumn/Winter Quiet Luxury Campaign" class="hero-bg-image">
+        <div class="hero-scrim"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-meta-badge">AUTUMN / WINTER MMXXVI · PARIS ATELIER</div>
+        
+        <h1 class="hero-brand-heading">VÉRÉ</h1>
+        
+        <p class="hero-tagline">THE ART OF TIMELESS DRESSING</p>
+
+        <div class="hero-bottom-grid">
+          <p class="hero-description">
+            Discover refined silhouettes, timeless essentials and carefully curated fashion designed for effortless elegance.
+          </p>
+
+          <div class="hero-cta-wrap">
+            <a href="#collections" class="hero-cta-btn">
+              <span>EXPLORE COLLECTION</span>
+              <span class="cta-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-scroll-cue">
+          <span class="hero-scroll-line" aria-hidden="true"></span>
+          <span>SCROLL TO DISCOVER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         Brand Marquee / Maison Ethos Strip
+         --------------------------------------------------------------------- -->
+    <aside class="marquee-strip" aria-label="Maison Highlights">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          <span>PARISIAN ATELIER DESIGN</span>
+          <span class="marquee-bullet">✦</span>
+          <span>NOBLE RAW FIBERS</span>
+          <span class="marquee-bullet">✦</span>
+          <span>BIELLA VIRGIN WOOL</span>
+          <span class="marquee-bullet">✦</span>
+          <span>MONGOLIAN CASHMERE</span>
+          <span class="marquee-bullet">✦</span>
+          <span>TIMELESS EUROPEAN CRAFTSMANSHIP</span>
+          <span class="marquee-bullet">✦</span>
+          <span>QUIET LUXURY ESSENTIALS</span>
+          <span class="marquee-bullet">✦</span>
+        </div>
+        <div class="marquee-item" aria-hidden="true">
+          <span>PARISIAN ATELIER DESIGN</span>
+          <span class="marquee-bullet">✦</span>
+          <span>NOBLE RAW FIBERS</span>
+          <span class="marquee-bullet">✦</span>
+          <span>BIELLA VIRGIN WOOL</span>
+          <span class="marquee-bullet">✦</span>
+          <span>MONGOLIAN CASHMERE</span>
+          <span class="marquee-bullet">✦</span>
+          <span>TIMELESS EUROPEAN CRAFTSMANSHIP</span>
+          <span class="marquee-bullet">✦</span>
+          <span>QUIET LUXURY ESSENTIALS</span>
+          <span class="marquee-bullet">✦</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ---------------------------------------------------------------------
+         Brand Pillars: The Philosophy of Quiet Luxury
+         --------------------------------------------------------------------- -->
+    <section class="pillars-section" aria-labelledby="pillars-title">
+      <div class="container">
+        <header class="pillars-header">
+          <span class="editorial-subhead">THE FOUNDATIONAL PRINCIPLES</span>
+          <h2 id="pillars-title" class="editorial-title">Quiet Elegance, Enduring Form</h2>
+        </header>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <span class="pillar-index">I.</span>
+            <h3 class="pillar-title">Noble Raw Fibers</h3>
+            <p class="pillar-desc">
+              Every garment begins with uncompromised materiality: 4-ply Mongolian cashmere, Super 130s Italian virgin wool, and 22-momme Mulberry silks.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <span class="pillar-index">II.</span>
+            <h3 class="pillar-title">Architectural Poise</h3>
+            <p class="pillar-desc">
+              Silhouettes drafted with precision drape and clean, unembellished geometry designed to move with quiet grace and natural authority.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <span class="pillar-index">III.</span>
+            <h3 class="pillar-title">Atelier Heritage</h3>
+            <p class="pillar-desc">
+              Hand-finished in historic European ateliers where generational master tailors honor centuries of sartorial savoir-faire.
+            </p>
+          </article>
+
+          <article class="pillar-card">
+            <span class="pillar-index">IV.</span>
+            <h3 class="pillar-title">Generational Longevity</h3>
+            <p class="pillar-desc">
+              Created outside the ephemeral churn of seasonal fashion. A VÉRÉ garment is an heirloom crafted to outlive the decade.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         8. Featured Collections
+         --------------------------------------------------------------------- -->
+    <section id="collections" class="collections-section" aria-labelledby="collections-title">
+      <div class="container">
+        <div class="section-top-row">
+          <div class="section-heading-wrap">
+            <span class="editorial-subhead">AUTUMN / WINTER EDITIONS</span>
+            <h2 id="collections-title" class="editorial-title">Curated Collections</h2>
+          </div>
+          <a href="#products" class="section-view-all">
+            <span>EXPLORE ALL SILHOUETTES</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="collections-grid">
+          <!-- Collection 1 -->
+          <article class="collection-card">
+            <div class="collection-media">
+              <img src="images/collection-cashmere.jpg" alt="The Cashmere and Knitwear Collection" class="collection-img">
+              <div class="collection-overlay"></div>
+            </div>
+            <div class="collection-info">
+              <span class="collection-num">COLLECTION 01</span>
+              <h3 class="collection-title">The Cashmere &amp; Wool Atelier</h3>
+              <p class="collection-subtitle">Sculpted knitwear in raw oatmeal and ivory</p>
+              <a href="#products" class="collection-link">DISCOVER EDIT →</a>
+            </div>
+          </article>
+
+          <!-- Collection 2 -->
+          <article class="collection-card">
+            <div class="collection-media">
+              <img src="images/collection-tailoring.jpg" alt="Architectural Outerwear and Tailoring" class="collection-img">
+              <div class="collection-overlay"></div>
+            </div>
+            <div class="collection-info">
+              <span class="collection-num">COLLECTION 02</span>
+              <h3 class="collection-title">Architectural Tailoring</h3>
+              <p class="collection-subtitle">Biella virgin wool blazers &amp; double-faced coats</p>
+              <a href="#products" class="collection-link">DISCOVER EDIT →</a>
+            </div>
+          </article>
+
+          <!-- Collection 3 -->
+          <article class="collection-card">
+            <div class="collection-media">
+              <img src="images/collection-evening.jpg" alt="Le Soir and Fluid Silks" class="collection-img">
+              <div class="collection-overlay"></div>
+            </div>
+            <div class="collection-info">
+              <span class="collection-num">COLLECTION 03</span>
+              <h3 class="collection-title">Le Soir &amp; Fluid Silk</h3>
+              <p class="collection-subtitle">Mulberry silk slip dresses &amp; draped silhouettes</p>
+              <a href="#products" class="collection-link">DISCOVER EDIT →</a>
+            </div>
+          </article>
+
+          <!-- Collection 4 -->
+          <article class="collection-card">
+            <div class="collection-media">
+              <img src="images/collection-leather.jpg" alt="Leather Goods and Heirlooms" class="collection-img">
+              <div class="collection-overlay"></div>
+            </div>
+            <div class="collection-info">
+              <span class="collection-num">COLLECTION 04</span>
+              <h3 class="collection-title">Leather Heirlooms &amp; Objects</h3>
+              <p class="collection-subtitle">Full-grain Tuscan saddle leather, hand-stitched</p>
+              <a href="#products" class="collection-link">DISCOVER EDIT →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         9. Product Section: L'Atelier Permanent
+         --------------------------------------------------------------------- -->
+    <section id="products" class="products-section" aria-labelledby="products-title">
+      <div class="container">
+        <header class="pillars-header">
+          <span class="editorial-subhead">L'ATELIER PERMANENT</span>
+          <h2 id="products-title" class="editorial-title">Timeless Essentials</h2>
+        </header>
+
+        <!-- Category Filters -->
+        <div class="filter-bar" role="tablist" aria-label="Product categories">
+          <span class="filter-pill active" role="tab" aria-selected="true">All Silhouettes</span>
+          <span class="filter-pill" role="tab" aria-selected="false">Outerwear &amp; Coats</span>
+          <span class="filter-pill" role="tab" aria-selected="false">Pure Cashmere</span>
+          <span class="filter-pill" role="tab" aria-selected="false">Tailored Suiting</span>
+          <span class="filter-pill" role="tab" aria-selected="false">Silk &amp; Evening</span>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-1.jpg" alt="The Draped Double-Face Wool Coat" class="product-img">
+              <span class="product-badge">Atelier Edition</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €2,450</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">90% Virgin Wool · 10% Cashmere</span>
+              <h3 class="product-name">The Draped Double-Face Wool Coat</h3>
+              <p class="product-palette">Shade: Sand Melange</p>
+              <div class="product-footer-row">
+                <span class="product-price">€2,450</span>
+                <span class="product-origin">Biella, Italy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-2.jpg" alt="The Mulberry Silk Halter Slip Gown" class="product-img">
+              <span class="product-badge">Mulberry Silk</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €1,680</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">100% 22-Momme Silk Crepe</span>
+              <h3 class="product-name">The Mulberry Silk Halter Slip Gown</h3>
+              <p class="product-palette">Shade: Champagne Ivory</p>
+              <div class="product-footer-row">
+                <span class="product-price">€1,680</span>
+                <span class="product-origin">Lyon, France</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-3.jpg" alt="The Architectural Double-Breasted Trench" class="product-img">
+              <span class="product-badge">Permanent Icon</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €1,920</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">Water-Repellent Cotton Gabardine</span>
+              <h3 class="product-name">The Architectural Trench Coat</h3>
+              <p class="product-palette">Shade: Warm Taupe</p>
+              <div class="product-footer-row">
+                <span class="product-price">€1,920</span>
+                <span class="product-origin">Paris Atelier</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-4.jpg" alt="The Sculpted Mock-Neck Knit" class="product-img">
+              <span class="product-badge">Pure Cashmere</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €1,150</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">4-Ply Mongolian Grade-A Cashmere</span>
+              <h3 class="product-name">The Sculpted Mock-Neck Knit</h3>
+              <p class="product-palette">Shade: Oatmeal Natural</p>
+              <div class="product-footer-row">
+                <span class="product-price">€1,150</span>
+                <span class="product-origin">Umbria, Italy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-5.jpg" alt="The Structured Biella Wool Blazer" class="product-img">
+              <span class="product-badge">Sartorial Cut</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €1,780</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">Super 130s Virgin Wool · Horn Buttons</span>
+              <h3 class="product-name">The Structured Biella Wool Blazer</h3>
+              <p class="product-palette">Shade: Deep Espresso</p>
+              <div class="product-footer-row">
+                <span class="product-price">€1,780</span>
+                <span class="product-origin">Milano Atelier</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-6.jpg" alt="The High-Waisted Tailored Trouser" class="product-img">
+              <span class="product-badge">Pure Tailoring</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €890</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">Fluid Wool-Silk Crepe</span>
+              <h3 class="product-name">The High-Waisted Tailored Trouser</h3>
+              <p class="product-palette">Shade: Soft Taupe</p>
+              <div class="product-footer-row">
+                <span class="product-price">€890</span>
+                <span class="product-origin">Paris Atelier</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-7.jpg" alt="The Draped Wool Duster" class="product-img">
+              <span class="product-badge">Limited Edition</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €2,200</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">Unlined Double-Faced Cashmere Blend</span>
+              <h3 class="product-name">The Draped Wool Duster</h3>
+              <p class="product-palette">Shade: Camel Cream</p>
+              <div class="product-footer-row">
+                <span class="product-price">€2,200</span>
+                <span class="product-origin">Florence, Italy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="images/product-8.jpg" alt="The Heirloom Hand-Stitched Leather Tote" class="product-img">
+              <span class="product-badge">Artisanal Heirloom</span>
+              <label for="bag-toggle" class="product-quick-add" role="button">Quick Add to Bag · €1,550</label>
+            </div>
+            <div class="product-details">
+              <span class="product-fabric">Tuscan Saddle Leather · Solid Brass</span>
+              <h3 class="product-name">The Heirloom Hand-Stitched Bag</h3>
+              <p class="product-palette">Shade: Deep Espresso</p>
+              <div class="product-footer-row">
+                <span class="product-price">€1,550</span>
+                <span class="product-origin">Tuscany, Italy</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         10. Editorial Spotlight / The Autumn Manifesto
+         --------------------------------------------------------------------- -->
+    <section id="editorial" class="editorial-spotlight" aria-labelledby="editorial-heading">
+      <div class="container">
+        <div class="editorial-spread">
+          <!-- Left: Editorial Visual Frame -->
+          <div class="editorial-media-side">
+            <div class="editorial-frame">
+              <img src="images/lookbook-story.jpg" alt="VÉRÉ Lookbook Autumn Editorial" class="editorial-photo">
+            </div>
+            <div class="editorial-frame-caption">
+              <span>LOOK 04 — LE MANTEAU EN LAINE</span>
+              <span>PLACE DES VOSGES, PARIS</span>
+            </div>
+          </div>
+
+          <!-- Right: Poetic Brand Philosophy Text -->
+          <div class="editorial-text-side">
+            <span class="editorial-subhead">THE QUIET LUXURY MANIFESTO</span>
+            <h2 id="editorial-heading" class="editorial-title">The Art of Timeless Dressing</h2>
+            
+            <blockquote class="editorial-quote">
+              "True luxury never clamors for attention. It resides in the hush of unadorned proportion, the weight of noble wool, and the confidence of an impeccably draped silhouette."
+            </blockquote>
+
+            <p class="editorial-body-prose">
+              At VÉRÉ, we dismiss the frantic cycle of seasonal novelty. We design for the woman and man whose presence is felt through quiet composure. Every seam is considered, every lining is omitted where pure double-faced fabric can breathe, and every tone belongs to an enduring palette of warm beige, champagne, and deep espresso.
+            </p>
+
+            <div class="editorial-signature-wrap">
+              <div class="signature-monogram">V</div>
+              <div>
+                <div class="signature-name">Hélène de Courcy</div>
+                <div class="signature-role">Directrice Artistique, Maison VÉRÉ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         11. About Section: Atelier & European Heritage
+         --------------------------------------------------------------------- -->
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-col">
+            <span class="editorial-subhead">EUROPEAN SAVOIR-FAIRE</span>
+            <h2 id="about-title" class="about-title">A Heritage of Parisian Distinction</h2>
+            
+            <p class="about-desc">
+              Founded on the principles of classic European high fashion, VÉRÉ bridges the architectural discipline of mid-century Parisian haute couture with the effortless ease of modern quiet luxury. Our garments are drafted in our Place Vendôme studio and brought to life in historic textile mills across Northern Italy and France.
+            </p>
+
+            <div class="about-pillars-list">
+              <div class="about-pillar-row">
+                <span class="about-pillar-heading">Place Vendôme</span>
+                <p class="about-pillar-text">Where every initial silhouette is sculpted on the dress form, testing the natural drape and harmonic weight of fabric.</p>
+              </div>
+
+              <div class="about-pillar-row">
+                <span class="about-pillar-heading">Biella &amp; Como</span>
+                <p class="about-pillar-text">Partnering exclusively with multi-generational weaving mills that safeguard artisanal wool and pure silk traditions.</p>
+              </div>
+
+              <div class="about-pillar-row">
+                <span class="about-pillar-heading">Slow Cadence</span>
+                <p class="about-pillar-text">Small, numbered runs with meticulous hand-sewn buttonholes, horn buttons, and bound French seams.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-media-col">
+            <div class="about-image-wrap">
+              <img src="images/atelier-craft.jpg" alt="Artisanal textile weaving and tailoring" class="about-img">
+            </div>
+            <div class="about-caption-box">
+              <div class="about-caption-year">MMXXVI</div>
+              <p class="about-caption-text">Maison VÉRÉ Archive · Preserving traditional European textile craftsmanship and quiet elegance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         12. Contact Section: The Private Client Concierge
+         --------------------------------------------------------------------- -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Left: Ateliers & Client Services -->
+          <div class="contact-info-col" id="concierge">
+            <span class="editorial-subhead">PRIVATE CLIENT SERVICES</span>
+            <h2 id="contact-heading" class="editorial-title">Private Consultations &amp; Salons</h2>
+            
+            <p class="contact-intro">
+              Experience the collection privately at our European salons or reserve a bespoke fitting consultation with our Senior Sartorial Advisors.
+            </p>
+
+            <div class="ateliers-list">
+              <article class="atelier-item">
+                <h3 class="atelier-city">Paris · Place Vendôme</h3>
+                <p class="atelier-address">24 Place Vendôme, 75001 Paris, France</p>
+                <p class="atelier-hours">Tuesday — Saturday · 10:00 — 19:00</p>
+              </article>
+
+              <article class="atelier-item">
+                <h3 class="atelier-city">London · Mayfair</h3>
+                <p class="atelier-address">14 New Bond Street, London W1S 3PF, United Kingdom</p>
+                <p class="atelier-hours">Monday — Saturday · 10:00 — 18:30</p>
+              </article>
+
+              <article class="atelier-item">
+                <h3 class="atelier-city">Milano · Quadrilatero</h3>
+                <p class="atelier-address">9 Via Montenapoleone, 20121 Milano, Italy</p>
+                <p class="atelier-hours">Monday — Saturday · 10:30 — 19:30</p>
+              </article>
+
+              <article class="atelier-item">
+                <h3 class="atelier-city">Direct Concierge Inquiries</h3>
+                <p class="atelier-address">Email: concierge@veremaison.com</p>
+                <p class="atelier-hours">Telephone: +33 (0)1 42 68 50 00</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Right: Accessible Bespoke Appointment Form -->
+          <div class="contact-form-col">
+            <div class="concierge-form-card">
+              <form action="#contact" method="POST">
+                <fieldset class="form-fieldset">
+                  <legend class="form-legend">Request an Appointment</legend>
+                  <p class="form-subhead">Our Private Client Concierge will contact you within 12 hours.</p>
+
+                  <div class="form-row">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                      <label for="contact-name" class="form-label">
+                        <span>Full Name</span>
+                        <span class="required-mark">*</span>
+                      </label>
+                      <input 
+                        type="text" 
+                        id="contact-name" 
+                        name="full_name" 
+                        class="form-input" 
+                        placeholder="e.g. Eleanor Vance" 
+                        required 
+                        autocomplete="name"
+                      >
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="form-group">
+                      <label for="contact-email" class="form-label">
+                        <span>Email Address</span>
+                        <span class="required-mark">*</span>
+                      </label>
+                      <input 
+                        type="email" 
+                        id="contact-email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="e.g. eleanor@vance.com" 
+                        required 
+                        autocomplete="email" 
+                        autocorrect="off" 
+                        autocapitalize="off" 
+                        spellcheck="false"
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                      <label for="contact-phone" class="form-label">
+                        <span>Phone / WhatsApp</span>
+                      </label>
+                      <input 
+                        type="tel" 
+                        id="contact-phone" 
+                        name="telephone" 
+                        class="form-input" 
+                        placeholder="+33 6 12 34 56 78" 
+                        autocomplete="tel" 
+                        inputmode="tel"
+                      >
+                    </div>
+
+                    <!-- Atelier Location -->
+                    <div class="form-group">
+                      <label for="contact-salon" class="form-label">
+                        <span>Preferred Salon</span>
+                        <span class="required-mark">*</span>
+                      </label>
+                      <select id="contact-salon" name="salon_location" class="form-select" required>
+                        <option value="">Select Atelier Location</option>
+                        <option value="paris">Paris — Place Vendôme</option>
+                        <option value="london">London — New Bond Street</option>
+                        <option value="milan">Milano — Via Montenapoleone</option>
+                        <option value="virtual">Private Digital Video Salon</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Service Requested -->
+                  <div class="form-group">
+                    <label for="contact-service" class="form-label">
+                      <span>Service Requested</span>
+                      <span class="required-mark">*</span>
+                    </label>
+                    <select id="contact-service" name="service_type" class="form-select" required>
+                      <option value="">Select Nature of Consultation</option>
+                      <option value="fitting">Private Fitting — Autumn Collection</option>
+                      <option value="bespoke">Bespoke Cashmere &amp; Tailoring Consultation</option>
+                      <option value="wardrobe">Complete Seasonal Wardrobe Curation</option>
+                      <option value="general">Maison Inquiries &amp; Press</option>
+                    </select>
+                  </div>
+
+                  <!-- Personal Note / Message -->
+                  <div class="form-group">
+                    <label for="contact-message" class="form-label">
+                      <span>Specific Inquiries &amp; Preferred Dates</span>
+                    </label>
+                    <textarea 
+                      id="contact-message" 
+                      name="message" 
+                      class="form-textarea" 
+                      placeholder="Please indicate preferred dates, sizing requirements, or particular pieces of interest..." 
+                      maxlength="500"
+                    ></textarea>
+                    <span class="form-hint">Maximum 500 characters.</span>
+                  </div>
+
+                  <button type="submit" class="form-submit-btn">
+                    REQUEST PRIVATE APPOINTMENT →
+                  </button>
+
+                  <p class="form-privacy-note">
+                    Your confidential information is processed strictly by our Paris concierge. We respect your privacy in accordance with European standards.
+                  </p>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         13. The VÉRÉ Gazette / Private Ledger
+         --------------------------------------------------------------------- -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-inner">
+          <span class="editorial-subhead">THE PRIVATE LEDGER</span>
+          <h2 id="newsletter-heading" class="newsletter-title">Receive Private Salon Invitations</h2>
+          <p class="newsletter-desc">
+            Subscribers receive advance previews of limited atelier editions, seasonal lookbooks, and invitations to private salon showings across Paris, London, and Milan.
+          </p>
+
+          <form action="#newsletter-heading" method="POST" class="newsletter-form">
+            <label for="newsletter-email" class="visually-hidden" style="position:absolute; width:1px; height:1px; overflow:hidden;">Your email address</label>
+            <input 
+              type="email" 
+              id="newsletter-email" 
+              name="subscriber_email" 
+              class="newsletter-input" 
+              placeholder="Enter your email address..." 
+              required 
+              autocomplete="email" 
+              autocorrect="off" 
+              autocapitalize="off" 
+              spellcheck="false"
+            >
+            <button type="submit" class="newsletter-submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- -----------------------------------------------------------------------
+       14. Website Footer
+       ----------------------------------------------------------------------- -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <!-- Centered Monogram & Brand Title -->
+      <div class="footer-top-brand">
+        <img src="images/favicon.svg" alt="VÉRÉ V Monogram" class="footer-monogram">
+        <div class="footer-brand-title">VÉRÉ</div>
+        <p class="footer-brand-tagline">THE ART OF TIMELESS DRESSING</p>
+      </div>
+
+      <!-- 4 Footer Columns -->
+      <div class="footer-cols-grid">
+        <!-- Col 1: About the Maison -->
+        <div class="footer-col">
+          <div class="footer-col-title">The Maison</div>
+          <p class="footer-about-text">
+            VÉRÉ is an independent European luxury fashion house committed to quiet sophistication, noble natural fibers, and the timeless art of dressing with effortless dignity.
+          </p>
+          <div class="editorial-tagline text-champagne">PARIS 1ER · PLACE VENDÔME</div>
+        </div>
+
+        <!-- Col 2: The Collections -->
+        <div class="footer-col">
+          <div class="footer-col-title">The Collections</div>
+          <ul class="footer-links-list">
+            <li><a href="#products" class="footer-link">Double-Face Cashmere</a></li>
+            <li><a href="#products" class="footer-link">Biella Wool Tailoring</a></li>
+            <li><a href="#products" class="footer-link">Mulberry Silk Slip Gowns</a></li>
+            <li><a href="#products" class="footer-link">Architectural Outerwear</a></li>
+            <li><a href="#products" class="footer-link">Tuscan Leather Heirlooms</a></li>
+            <li><a href="#collections" class="footer-link">Lookbook Autumn Archive</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Client Services -->
+        <div class="footer-col">
+          <div class="footer-col-title">Client Services</div>
+          <ul class="footer-links-list">
+            <li><a href="#contact" class="footer-link">Private Client Concierge</a></li>
+            <li><a href="#contact" class="footer-link">Bespoke Salon Appointments</a></li>
+            <li><a href="#about" class="footer-link">Atelier Repairs &amp; Longevity</a></li>
+            <li><a href="#concierge" class="footer-link">Complimentary Insured Courier</a></li>
+            <li><a href="#concierge" class="footer-link">Garment Care &amp; Storage</a></li>
+            <li><a href="#contact" class="footer-link">Contact Our Stylists</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: European Salons -->
+        <div class="footer-col">
+          <div class="footer-col-title">Ateliers &amp; Salons</div>
+          <ul class="footer-links-list">
+            <li><a href="#contact" class="footer-link">24 Place Vendôme, Paris</a></li>
+            <li><a href="#contact" class="footer-link">14 New Bond Street, London</a></li>
+            <li><a href="#contact" class="footer-link">9 Via Montenapoleone, Milan</a></li>
+            <li><a href="#contact" class="footer-link">780 Madison Avenue, New York</a></li>
+            <li><a href="#contact" class="footer-link">Private Digital Fittings</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-cities">PARIS · LONDON · MILANO · NEW YORK</div>
+        
+        <div class="footer-copyright">
+          © 2026 VÉRÉ Maison de Mode. All rights reserved. The Art of Timeless Dressing.
+        </div>
+
+        <div class="footer-currency">
+          <span class="currency-option active">EUR (€)</span>
+          <span>·</span>
+          <span class="currency-option">GBP (£)</span>
+          <span>·</span>
+          <span class="currency-option">USD ($)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
