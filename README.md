@@ -7,6 +7,7 @@ A luxury fashion brand identity and editorial digital experience inspired by Eur
 
 ## 🏛️ Brand Identity
 
+* **Live Demo**: [https://dhuvaragish.github.io/clothing-website/](https://dhuvaragish.github.io/clothing-website/)
 * **Brand Name**: **VÉRÉ** (pronounced *veh-ray*)
 * **Tagline**: *"The Art of Timeless Dressing"*
 * **Brand Persona**: Understated luxury, European fashion heritage, architectural drape, minimal sophistication, noble raw fibers, and generational longevity over seasonal fast-fashion trends.
